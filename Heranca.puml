@@ -1,0 +1,22 @@
+@startuml
+class dio.coding_future._2_Heranca.Computador {
++ {static} void main(String[])
+}
+class dio.coding_future._2_Heranca.Telegram {
+}
+class dio.coding_future._2_Heranca.FacebookMessenger {
+}
+class dio.coding_future._2_Heranca.ServicoMensagemInstantanea {
++ void enviarMensagem()
++ void receberMensagem()
+- void validarConectadoInternet()
+- void salvarHistoricoMensagem()
+}
+class dio.coding_future._2_Heranca.MSNMessenger {
+}
+
+
+dio.coding_future._2_Heranca.ServicoMensagemInstantanea <|-- dio.coding_future._2_Heranca.Telegram
+dio.coding_future._2_Heranca.ServicoMensagemInstantanea <|-- dio.coding_future._2_Heranca.FacebookMessenger
+dio.coding_future._2_Heranca.ServicoMensagemInstantanea <|-- dio.coding_future._2_Heranca.MSNMessenger
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+class dio.coding_future.UM_Pilares_do_POO.Moto {
++ void ligar()
+}
+abstract class dio.coding_future.UM_Pilares_do_POO.Veiculo {
+- String chassi
++ String getChassi()
++ void setChassi(String)
++ void numeroChassi()
++ {abstract}void ligar()
+}
+class dio.coding_future.UM_Pilares_do_POO.Carro {
++ void ligar()
+- void conferindoCombustivel()
+- void conferindoCambio()
+}
+class dio.coding_future.UM_Pilares_do_POO.Autodromo {
++ {static} void main(String[])
+}
+
+
+dio.coding_future.UM_Pilares_do_POO.Veiculo <|-- dio.coding_future.UM_Pilares_do_POO.Moto
+dio.coding_future.UM_Pilares_do_POO.Veiculo <|-- dio.coding_future.UM_Pilares_do_POO.Carro
+@enduml

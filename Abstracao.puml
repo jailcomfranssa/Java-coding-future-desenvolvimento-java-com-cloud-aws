@@ -1,0 +1,26 @@
+@startuml
+class dio.coding_future._3_Abstracao.Computaodr {
++ {static} void main(String[])
+}
+abstract class dio.coding_future._3_Abstracao.ServicoMensagemInstantanea {
++ {abstract}void enviarMensagem()
++ {abstract}void receberMensagem()
+}
+class dio.coding_future._3_Abstracao.Telegram {
++ void enviarMensagem()
++ void receberMensagem()
+}
+class dio.coding_future._3_Abstracao.MSNMessenger {
++ void enviarMensagem()
++ void receberMensagem()
+}
+class dio.coding_future._3_Abstracao.FacebookMessenger {
++ void enviarMensagem()
++ void receberMensagem()
+}
+
+
+dio.coding_future._3_Abstracao.ServicoMensagemInstantanea <|-- dio.coding_future._3_Abstracao.Telegram
+dio.coding_future._3_Abstracao.ServicoMensagemInstantanea <|-- dio.coding_future._3_Abstracao.MSNMessenger
+dio.coding_future._3_Abstracao.ServicoMensagemInstantanea <|-- dio.coding_future._3_Abstracao.FacebookMessenger
+@enduml

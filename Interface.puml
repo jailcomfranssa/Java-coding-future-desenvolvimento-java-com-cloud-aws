@@ -1,0 +1,40 @@
+@startuml
+class Multifuncional {
++ void copiar()
++ void digitalizar()
++ void imprimir()
+}
+class Laserjet {
++ void digitalizar()
+}
+class Deskjet {
++ void digitalizar()
+}
+class Xerox {
++ void copiar()
+}
+interface Digitalizadora {
++ void digitalizar()
+}
+class Loja {
++ {static} void main(String[])
+}
+class Scanner {
++ void imprimir()
+}
+interface Copiadora {
++ void copiar()
+}
+interface Impressora {
++ void imprimir()
+}
+
+
+Copiadora <|.. Multifuncional
+Digitalizadora <|.. Multifuncional
+Impressora <|.. Multifuncional
+Digitalizadora <|.. Laserjet
+Digitalizadora <|.. Deskjet
+Copiadora <|.. Xerox
+Impressora <|.. Scanner
+@enduml

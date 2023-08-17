@@ -1,0 +1,11 @@
+@startuml
+class dio.coding_future._1_Encapsulamento.ComputadorUsuario {
++ {static} void main(String[])
+}
+class dio.coding_future._1_Encapsulamento.MsNMessenger {
++ void enviarMensagem()
++ void receberMensagem()
+- void validarConectadoInternet()
+- void salvarHistoricoMensagem()
+}
+@enduml
